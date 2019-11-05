@@ -2,6 +2,6 @@
 
 This is a collection of howto.
 
-* [build CircuitPython on Mac]()
+* [20191105-Build CircuitPython on Mac](https://github.com/ndGarage/howto/blob/master/buildCircuitPythonOnMac.md)
 
 
