@@ -35,3 +35,7 @@ Converting to uf2, output size: 497152, start address: 0x2000
 Wrote 497152 bytes to build-circuitplayground_express/firmware.uf2.
 ```
 
+## Reference
+
+* [Adafruit](https://learn.adafruit.com/building-circuitpython/build-circuitpython)
+
