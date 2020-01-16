@@ -136,7 +136,7 @@ AmbiqSuite-R2.3.2 $tree -L 2
 47 directories, 61 files
 ```
 
-### Then clone the Sparkfun_Edge_BSP.
+### Clone [Sparkfun_Edge_BSP](https://github.com/sparkfun/SparkFun_Edge_BSP)
 
 ```
 cd $AMB_ROOT/boards
@@ -156,6 +156,31 @@ cd $AMB_ROOT/boards/SparkFun_Edge_BSP/bsp/tools/
 chmod 755 uart_wired_update_sparkfun.py
 ```
 
+## Build the first example
+
+Make sure that the ARM-GCC is in the $PATH
+```
+export ARMGCC_DIR="$HOME/opt/armDev/gcc-arm-none-eabi-8-2018-q4-major"
+```
+
+Edit gcc/Makefile to replace COM4 with the actual port while the Edge board is connected to. (On Windows COMx, on Mac/Linux /dev/cu.usbserialxxx.)
+
+```
+cd $AMB_ROOT/boards/SparkFun_Edge_BSP/examples/example1_edge_test/gcc/
+make
+```
+
+## Flash code to board
+
+Hold down Button14, press and release Reset
+
+```
+make bootload
+```
+
+
+
 ## Ref
 
-* [Sparkfun Tutorial]()
+* [Sparkfun Tutorial](https://learn.sparkfun.com/tutorials/using-sparkfun-edge-board-with-ambiq-apollo3-sdk/all)
+
