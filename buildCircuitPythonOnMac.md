@@ -15,6 +15,7 @@ $brew install gettext
 
 $brew link gettext --force
 
+cd circuitpython
 make V=2 -C mpy-cross
 
 ```
